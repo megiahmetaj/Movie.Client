@@ -13,10 +13,29 @@
     <a href="add-movie.html">+ Add Movie</a>
 </header>
 
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="🔍 Search movies..." onkeyup="searchMovies()">
+</div>
+<div class="sort-bar">
+    <select id="sortSelect" onchange="sortMovies()">
+        <option value="default">Sort by...</option>
+        <option value="rating"> Rating (High to Low)</option>
+        <option value="year"> Year (Newest First)</option>
+        <option value="title"> Title (A-Z)</option>
+    </select>
+</div>
+<div class="filter-bar">
+    <button class="filter-btn active" id="btnAll" onclick="filterAll()"> All Movies</button>
+    <button class="filter-btn" id="btnFav" onclick="filterFavorites()"> Favorites</button>
+</div>
+<div class="filter-bar">
+    <select id="genreFilter" onchange="filterByGenre(this.value)">
+        <option value="all"> Genres</option>
+    </select>
+</div>
 <div class="movies-grid" id="moviesGrid">
     <p class="no-movies">Loading movies...</p>
 </div>
-
 <script src="scripts/index.js"></script>
 
 </body>

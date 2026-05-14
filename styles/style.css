@@ -31,3 +31,36 @@ header a:hover { background-color: #b20710; }
 .form-group input:focus { outline: none; border-color: #e50914; }
 .submit-btn { width: 100%; padding: 14px; background-color: #e50914; color: white; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; }
 .submit-btn:hover { background-color: #b20710; }
+
+/* Search bar */
+.search-bar { padding: 20px 40px 0 40px; }
+.search-bar input { width: 100%; padding: 14px 20px; background-color: #1f1f1f; border: 1px solid #333; border-radius: 8px; color: white; font-size: 16px; }
+.search-bar input:focus { outline: none; border-color: #e50914; }
+
+/* Sort bar */
+.sort-bar { padding: 10px 40px 0 40px; }
+.sort-bar select { padding: 10px 20px; background-color: #1f1f1f; border: 1px solid #333; border-radius: 8px; color: white; font-size: 14px; cursor: pointer; }
+.sort-bar select:focus { outline: none; border-color: #e50914; }
+
+/* Detail page */
+.detail-container { max-width: 900px; margin: 60px auto; background-color: #1f1f1f; border-radius: 10px; overflow: hidden; display: flex; gap: 40px; padding: 40px; }
+.detail-container img { width: 250px; height: 370px; object-fit: cover; border-radius: 8px; }
+.detail-info { flex: 1; }
+.detail-info h2 { font-size: 32px; margin-bottom: 10px; color: white; }
+.detail-info .detail-rating { color: #f5c518; font-size: 22px; font-weight: bold; margin-bottom: 20px; }
+.detail-info p { color: #aaa; font-size: 16px; margin-bottom: 10px; line-height: 1.6; }
+.detail-info span { color: white; font-weight: bold; }
+.detail-actions { display: flex; gap: 10px; margin-top: 30px; }
+.detail-actions a { padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 14px; }
+.detail-edit { background-color: #0d6efd; color: white; }
+.detail-delete { background-color: #e50914; color: white; cursor: pointer; border: none; font-size: 14px; padding: 10px 25px; border-radius: 5px; font-weight: bold; }
+
+/* Favorites */
+.fav-btn { background: none; border: none; font-size: 20px; cursor: pointer; padding: 5px; }
+.movies-grid.favorites-only .movie-card { display: none; }
+.movies-grid.favorites-only .movie-card.favorited { display: block; }
+.filter-bar { padding: 10px 40px 0 40px; display: flex; gap: 10px; }
+.filter-btn { padding: 10px 20px; border-radius: 8px; border: 1px solid #333; background-color: #1f1f1f; color: white; cursor: pointer; font-size: 14px; }
+.filter-btn.active { background-color: #e50914; border-color: #e50914; }
+.filter-bar select { padding: 10px 20px; background-color: #1f1f1f; border: 1px solid #333; border-radius: 8px; color: white; font-size: 14px; cursor: pointer; }
+.filter-bar select:focus { outline: none; border-color: #e50914; }
