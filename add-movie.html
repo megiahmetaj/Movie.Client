@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<header>
+    <h1> Movie Collection</h1>
+    <a href="index.html">← Back</a>
+</header>
+
+<div class="form-container">
+    <h2>Add New Movie</h2>
+
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" id="title" placeholder="e.g. Inception">
+    </div>
+    <div class="form-group">
+        <label>Genre</label>
+        <input type="text" id="genre" placeholder="e.g. Sci-Fi">
+    </div>
+    <div class="form-group">
+        <label>Director</label>
+        <input type="text" id="director" placeholder="e.g. Christopher Nolan">
+    </div>
+    <div class="form-group">
+        <label>Year</label>
+        <input type="number" id="year" placeholder="e.g. 2010">
+    </div>
+    <div class="form-group">
+        <label>Rating (0-10)</label>
+        <input type="number" id="rating" step="0.1" placeholder="e.g. 8.8">
+    </div>
+    <div class="form-group">
+        <label>Duration (minutes)</label>
+        <input type="number" id="duration" placeholder="e.g. 148">
+    </div>
+    <div class="form-group">
+        <label>Poster URL</label>
+        <input type="text" id="posterUrl" placeholder="https://...">
+    </div>
+
+    <button class="submit-btn" onclick="addMovie()">Add Movie</button>
+</div>
+
+<script src="scripts/add-movie.js"></script>
+
+</body>
+</html>
